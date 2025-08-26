@@ -4,8 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="../css/styles.css" />
 </head>
 <body>
     
+  <nav class="navbar">
+    <a href="inicio.html" id="logo-superior">
+      <img src="../images/logos/logoPrincipalMinimalista.png" height="100" alt="Logo SOBERBIO" />
+    </a>
+    <div class="nav-actions">
+      <a href="reservar.html" class="btn-reservar-top">RESERVAR</a>
+      <button id="menu-toggle" class="menu-toggle" aria-label="Menú">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <div id="menu-overlay" class="menu-overlay">
+    <nav class="menu">
+      <a href="inicio.html">INICIO</a>
+      <a href="menu.html">MENÚ</a>
+      <a href="nosotros.html">NOSOTROS</a>
+      <a href="gallery.html">GALERÍA</a>
+      <a href="prensa.html">PRENSA</a>
+      <a href="contacto.html">CONTACTO</a>
+    </nav>
+  </div>
+
+  <section id="reservas">
+    <div class="reserva-card">
+      <h2>Elige</h2>
+      <p>Número de personas</p>
+      <div class="personas">
+        <button>1</button>
+        <button>2</button>
+        <button>3</button>
+        <button>4</button>
+        <button>5</button>
+        <button>6</button>
+      </div>
+    </div>
+
+    <div class="reserva-card">
+      <h2>Fecha</h2>
+      <p>Selecciona la fecha para tu reserva</p>
+      <input type="date" />
+    </div>
+
+    <div class="reserva-card">
+      <h2>Hora</h2>
+      <p>Selecciona una hora disponible</p>
+      <select>
+        <option value="18:00">18:00</option>
+        <option value="18:30">18:30</option>
+        <option value="19:00">19:00</option>
+        <option value="19:30">19:30</option>
+        <option value="20:00">20:00</option>
+        <option value="20:30">20:30</option>
+        <option value="21:00">21:00</option>
+      </select>
+    </div>
+  </section>
+
+  <div class="reserva-accion">
+    <button class="btn-reservar-top">COMPLETA LOS DATOS</button>
+  </div>
+
+  <script>
+    document.querySelectorAll('.personas button').forEach(btn => {
+      btn.addEventListener('click', () => {
+        document.querySelectorAll('.personas button').forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+      });
+    });
+  </script>
 </body>
 </html>
