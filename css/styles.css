@@ -1,50 +1,40 @@
+/* --- INICIO BODY --- */
 body {
-
   background-color: black;
   color: white;
   margin: 0;
   font-family: 'Poppins', sans-serif;
 }
 
+/* --- INICIO TITULOS (h1-h6) --- */
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Poppins', sans-serif; 
   font-weight: 700; 
 }
 
+/* --- INICIO TEXTO GENERAL (p, li, a, button) --- */
 p, li, a, button {
   font-family: 'Poppins', sans-serif;
   font-weight: 400; 
 }
 
-
+/* --- INICIO LOGO PRINCIPAL --- */
 #logo-principal {
   display: flex;
   justify-content: center;
   align-items: center;
-    position: absolute;            
+  position: absolute;            
   top: 50%;                      
   left: 50%;                     
   transform: translate(-50%, -50%); 
 }
 
-
+/* --- INICIO CUERPO --- */
 #cuerpo {
   padding: 160px;
 }
 
-
-footer {
-  display: flex;
-  flex-direction: row;
-}
-
-
-#social {
-  display: flex;
-  flex-grow: 1;
-  justify-content: end;
-}
-
+/* --- INICIO PRESENTACION --- */
 #presentacion {
   height: 1000px;
   background-image: url('../images/imagenes-del-fondo/soberbioBistroistro.jpg');
@@ -52,7 +42,7 @@ footer {
   position: relative; 
 }
 
-
+/* --- INICIO BOTONES --- */
 button {
   background-color: #f2f2f2;
   color: #0b1a2f;
@@ -69,6 +59,7 @@ button:hover {
   transform: scale(1.05);
 }
 
+/* --- INICIO NAVBAR --- */
 .navbar {
   position: absolute;
   top: 0;
@@ -88,6 +79,7 @@ button:hover {
   gap: 20px;
 }
 
+/* --- INICIO BOTON RESERVAR (NAV) --- */
 .btn-reservar-top {
   text-decoration: none;
   color: white;
@@ -96,13 +88,12 @@ button:hover {
   letter-spacing: 2px;
   transition: background-color .3s ease, color .3s ease;
 }
-
 .btn-reservar-top:hover {
   background-color: white;
   color: #0b1a2f;
 }
 
-
+/* --- INICIO BOTON MENU TOGGLE --- */
 .menu-toggle {
   display: flex;
   flex-direction: column;
@@ -115,7 +106,6 @@ button:hover {
   cursor: pointer;
   padding: 0;
 }
-
 .menu-toggle span {
   display: block;
   width: 100%;
@@ -123,6 +113,7 @@ button:hover {
   background-color: white;
 }
 
+/* --- INICIO MENU OVERLAY --- */
 .menu-overlay {
   position: fixed;
   top: 0;
@@ -137,8 +128,7 @@ button:hover {
   z-index: 2000;
 }
 
-
-
+/* --- INICIO CONTACTO --- */
 #contacto h1 {
   font-size: 2.5rem;
   margin-bottom: 2rem;
@@ -155,19 +145,16 @@ button:hover {
   gap: 1rem;
 }
 
-
 #contacto a {
   color: #aaa;              
   text-decoration: none;
 }
-
 #contacto a:hover {
   text-decoration: underline;
   color: #fff;              
 }
 
-
-
+/* --- INICIO NOSOTROS --- */
 #nosotros {
   display: flex;
   flex-wrap: wrap;
@@ -178,7 +165,6 @@ button:hover {
   margin: 0 auto;
   padding: 2rem 0;
 }
-
 #nosotros img {
   flex: 1 1 500px;
   max-width: 500px;
@@ -186,19 +172,16 @@ button:hover {
   height: auto;
   border-radius: 4px;
 }
-
 #nosotros .nosotros-text {
   flex: 1 1 400px;
   max-width: 600px;
 }
-
 #nosotros .nosotros-text h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
 }
 
-
-
+/* --- INICIO ACERCA DE --- */
 #acerca {
   display: flex;
   flex-wrap: wrap;
@@ -209,9 +192,7 @@ button:hover {
   margin: 0 auto;
   padding: 100px 0;
 }
-
 #acerca img {   
-
   flex: 1 1 500px;
   order: 1;
   max-width: 500px;
@@ -219,44 +200,37 @@ button:hover {
   height: auto;
   border-radius: 4px;
 }
-
 #acerca .acerca-text {
-    order: 2;
+  order: 2;
   flex: 1 1 400px;
   max-width: 600px;
 }
-
 #acerca .acerca-text h2 {
-    margin: 0;
-    order: 2;
+  margin: 0;
+  order: 2;
   font-size: 3rem;
   margin-bottom: 1rem;
 }
 
+/* --- INICIO INSPIRACION --- */
 #inspiracion {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column; 
   padding: 0px ;
-  
 }
-
-
-
 #inspiracion img {
   margin-top: 2rem;
   border-radius: 4px;
   padding: 20px;
 }
-
 #inspiracion h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-  }
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
 
-
-
+/* --- INICIO CHEF --- */
 #chef {
   display: flex;
   flex-wrap: wrap;
@@ -267,7 +241,6 @@ button:hover {
   margin: 0 auto;
   padding: 2rem 0;
 }
-
 #chef img {
   flex: 1 1 500px;
   max-width: 500px;
@@ -276,18 +249,16 @@ button:hover {
   border-radius: 4px;
   margin-top: 100px; 
 }
-
 #chef .chef-text {
   flex: 1 1 400px;
   max-width: 600px;
 }
-
 #chef .chef-text h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
-  
 }
 
+/* --- INICIO EQUIPO --- */
 #equipo {
   display: flex;
   justify-content: center;
@@ -297,21 +268,18 @@ button:hover {
   text-align: center; 
   margin: 0 auto 1.5rem;
   line-height: 1.6;
-
 }
-
 #equipo img {
   margin-top: 2rem;
   border-radius: 4px;
   padding: 20px;
 }
-
 #equipo h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-  }
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
 
-
+/* --- INICIO AWARDS --- */
 #awards {
   display: flex;
   align-items: flex-start;
@@ -321,13 +289,11 @@ button:hover {
   padding: 2rem 0;
   flex-wrap: wrap;
 }
-
 #awards-text {
   flex: 1 1 400px;
   max-width: 600px;
   min-width: 300px;
 }
-
 #awards img {
   flex: 1 1 350px;
   max-width: 400px;
@@ -336,7 +302,6 @@ button:hover {
   border-radius: 4px;
   display: block;
 }
-
 #awards button {
   margin-top: 2rem;
   display: block;
@@ -344,21 +309,20 @@ button:hover {
 #awards-text button {
   display: block;
   margin: 2rem auto 0 auto; 
-    width: 200px;
+  width: 200px;
 }
 
+/* --- INICIO UBICACION --- */
 #ubicacion {
   max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
 }
-
 #ubicacion h2 {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
   text-align: center;
 }
-
 #ubicacion iframe {
   width: 100%;
   height: 400px;
@@ -366,23 +330,14 @@ button:hover {
   border-radius: 8px; 
 }
 
-
+/* --- INICIO FOOTER --- */
 footer {
-  display: flex;
-  flex-direction: row;
-}
-
-footer {
-
   padding: 2rem 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;              
- 
 }
-
-
 
 footer ul {
   list-style: none;
@@ -396,9 +351,12 @@ footer ul li a {
   text-decoration: none;
   color: #ccc;
   font-weight: 400;
-
 }
 
+footer .social {
+  display: flex;
+  gap: 1rem;
+}
 
 footer .social a img:hover {
   transform: scale(1.1);
