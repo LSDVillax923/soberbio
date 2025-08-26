@@ -8,3 +8,30 @@
   justify-content: center;
   align-items: center;
 }
+
+#logo-superior {
+  padding: 0%;
+  margin: 0%;
+}
+
+a :visited {
+  color: none;
+}
+
+#cuerpo {
+  padding: 160px;
+  
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  
+}
+
+
+#social {
+  display: flex;
+  flex-grow: 1;
+  justify-content: end;
+}
