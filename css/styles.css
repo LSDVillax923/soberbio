@@ -362,3 +362,98 @@ footer .social a img:hover {
   transform: scale(1.1);
   filter: brightness(1.2);
 }
+
+.menu-overlay.open {
+  display: flex;
+}
+
+
+
+/* --- Reservas --- */
+body.reservar-page {
+  background: url("../images/imagenes-del-fondo/soberbioBistroistro.jpg") center/cover fixed no-repeat;
+  color: #fff;
+}
+body.reservar-page::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.65);
+  z-index: -1;
+}
+#reservas {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 140px auto 3rem;
+  padding: 0 1rem;
+}
+.reserva-card {
+  flex: 1;
+  text-align: center;
+  padding: 2rem 1rem;
+  background: rgba(0, 0, 0, 0.45);
+  border-radius: 6px;
+  backdrop-filter: blur(8px);
+  animation: fadeInUp 0.6s forwards;
+  opacity: 0;
+}
+.reserva-card:nth-child(2) { animation-delay: 0.15s; }
+.reserva-card:nth-child(3) { animation-delay: 0.3s; }
+.reserva-card h2 { margin-top: 0; font-size: 1.5rem; letter-spacing: 1px; }
+.reserva-card p { font-size: 0.9rem; color: #ccc; }
+.personas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+.personas button {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.personas button:hover { transform: scale(1.1); background: #fff; color: #000; }
+.personas button.active { background: #fff; color: #000; }
+input[type="date"],
+select {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  color: #fff;
+  background: transparent;
+  border: 2px solid #fff;
+  border-radius: 4px;
+  transition: 0.3s;
+}
+input[type="date"]:focus,
+select:focus {
+  outline: none;
+  border-color: #f1c40f;
+  background: rgba(255, 255, 255, 0.1);
+}
+.reserva-accion {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.reserva-accion .btn-reservar-top {
+  display: inline-block;
+  margin-top: 1rem;
+  color: black;
+  
+}
+
+
+@keyframes fadeInUp {
+  from { transform: translateY(20px); opacity: 0; }
+  to   { transform: translateY(0);   opacity: 1; }
+}
