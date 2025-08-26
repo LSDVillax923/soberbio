@@ -1,8 +1,11 @@
-inicio.html {
+body {
   background-color: black;
-  color: white;
+  
 }
 
+*{
+    color: white;
+}
 
 
 #logo-principal {
@@ -15,24 +18,14 @@ inicio.html {
   transform: translate(-50%, -50%); 
 }
 
-#logo-superior {
-  padding: 0%;
-  margin: 0%;
-}
-
-a :visited {
-  color: none;
-}
 
 #cuerpo {
   padding: 160px;
-  
 }
 
 footer {
   display: flex;
   flex-direction: row;
-  
 }
 
 
