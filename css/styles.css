@@ -137,6 +137,33 @@ button:hover {
 
 
 
+#contacto h1 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+#contacto h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.contacto-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 1rem;
+}
+
+
+#contacto a {
+  color: #aaa;              
+  text-decoration: none;
+}
+
+#contacto a:hover {
+  text-decoration: underline;
+  color: #fff;              
+}
+
 
 
 
