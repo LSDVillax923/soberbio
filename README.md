@@ -216,3 +216,16 @@ erDiagram
   ADICIONAL ||--o{ ITEM_PEDIDO_ADICIONAL : adicional
   DOMICILIARIO o|--o{ PEDIDO : asignado
 ```
+  -------------------------------------------------------------------------------
+## 🎨 Paleta de colores
+Basando en la pagina web del restaurantr [El Chato](https://elchato.co) 
+
+### Brand color
+- `#FFF` → **texto (Blanco)**
+
+### Supporting colors
+- `#19191B` → **fondo (gris)**
+- `#212529` → **texto (gris claro)**
+
+### Ocacional
+- `#ffc107` → **imagenes (amarillo opaco)**
