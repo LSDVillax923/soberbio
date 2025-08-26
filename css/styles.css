@@ -76,6 +76,7 @@ button:hover {
   justify-content: space-between;
   align-items: center;
   padding: 20px 40px;
+  box-sizing: border-box;
   z-index: 3000;
 }
 
