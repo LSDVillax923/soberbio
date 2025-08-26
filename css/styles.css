@@ -1,12 +1,17 @@
 body {
   background-color: black;
+  color: white;
   
 }
 
-*{
-    color: white;
-}
 
+button {
+  background-color: transparent;
+  border: none;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
 
 #logo-principal {
   display: flex;
@@ -40,4 +45,22 @@ footer {
   background-image: url('../images/imagenes-del-fondo/soberbioBistroistro.jpg');
   background-size: cover;
   position: relative; 
+}
+
+
+button {
+  background-color: #f2f2f2;
+  color: #0b1a2f;
+  border: 2px solid #0b1a2f;
+  padding: 12px 24px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: background-color .3s ease, color .3s ease,
+              border-color .3s ease, transform .3s ease;
+}
+button:hover {
+  background-color: transparent;
+  color: #f2f2f2;
+  border-color: #f2f2f2;
+  transform: scale(1.05);
 }
