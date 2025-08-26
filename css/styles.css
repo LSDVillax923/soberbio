@@ -1,12 +1,18 @@
-* {
+inicio.html {
   background-color: black;
   color: white;
 }
+
+
 
 #logo-principal {
   display: flex;
   justify-content: center;
   align-items: center;
+    position: absolute;            
+  top: 50%;                      
+  left: 50%;                     
+  transform: translate(-50%, -50%); 
 }
 
 #logo-superior {
@@ -37,8 +43,8 @@ footer {
 }
 
 #presentacion {
-  height: 800px;
+  height: 1000px;
   background-image: url('../images/imagenes-del-fondo/soberbioBistroistro.jpg');
   background-size: cover;
-  
+  position: relative; 
 }
