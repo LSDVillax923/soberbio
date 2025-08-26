@@ -35,3 +35,10 @@ footer {
   flex-grow: 1;
   justify-content: end;
 }
+
+#presentacion {
+  height: 800px;
+  background-image: url('../images/imagenes-del-fondo/soberbioBistroistro.jpg');
+  background-size: cover;
+  
+}
