@@ -1,0 +1,10 @@
+* {
+  background-color: black;
+  color: white;
+}
+
+#logo-principal {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
