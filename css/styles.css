@@ -725,3 +725,32 @@ hr {
 #cuerpo-menu {
   padding-bottom: 140px; 
 }
+
+
+/* --- ADMIN PAGE --- */
+.admin-wrapper {
+  max-width: 500px;
+  margin: 80px auto;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #111;
+  border-radius: 8px;
+}
+
+.admin-wrapper label {
+  display: block;
+  margin-top: 12px;
+}
+
+.admin-wrapper input,
+.admin-wrapper textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.admin-wrapper button {
+  margin-top: 16px;
+}

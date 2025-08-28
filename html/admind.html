@@ -3,9 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Administrar menú</title>
+    <link rel="stylesheet" href="../css/styles.css">
 </head>
 <body>
     
+    <div class="admin-wrapper">
+        <h1>Administrar menú</h1>
+        <form id="plato-form">
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="descripcion">Descripción</label>
+            <textarea id="descripcion" name="descripcion" required></textarea>
+
+            <label for="precio">Precio</label>
+            <input type="number" id="precio" name="precio" required>
+
+            <label for="imagen">Imagen (URL)</label>
+            <input type="url" id="imagen" name="imagen" required>
+
+            <button type="submit">Agregar plato</button>
+        </form>
+    </div>
+
+    <script src="../js/admin.js"></script>
 </body>
+
 </html>
