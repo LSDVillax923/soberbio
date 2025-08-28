@@ -1,4 +1,8 @@
-if (!form || !lista) return;
+
+document.addEventListener('DOMContentLoaded', () => {
+  const form = document.getElementById('plato-form');
+  const lista = document.getElementById('platos-list');
+  if (!form || !lista) return;
 
   const renderPlatos = () => {
     const platos = JSON.parse(localStorage.getItem('platosExtra')) || [];
@@ -22,7 +26,7 @@ if (!form || !lista) return;
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
- const nuevoPlato = {
+const nuevoPlato = {
       nombre: form.nombre.value.trim(),
       descripcion: form.descripcion.value.trim(),
       precio: form.precio.value.trim(),
@@ -34,4 +38,4 @@ if (!form || !lista) return;
       form.reset();
     renderPlatos();
     });
-    
+    });

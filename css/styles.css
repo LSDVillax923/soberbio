@@ -752,5 +752,6 @@ hr {
 }
 
 .admin-wrapper button {
+    padding: 10px ;
   margin-top: 16px;
 }
