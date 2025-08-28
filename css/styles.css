@@ -426,3 +426,39 @@ footer .social a img:hover {
   color: black;
 }
 
+#cuerpo-reservar {
+  height: 800px;
+  background-image: url('../images/imagenesdefonfo/soberbioBistroistro.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+#cuerpo-reservar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5); 
+}
+
+.reservar-container {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  height: 100%;
+}
+
+.card {
+  background: rgba(30, 30, 30, 0.85);
+  color: white;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 280px;
+  text-align: center;
+}
