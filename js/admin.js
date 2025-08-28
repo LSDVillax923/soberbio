@@ -1,7 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
-  const form = document.getElementById('plato-form');
-  const lista = document.getElementById('platos-list');
-  if (!form || !lista) return;
+if (!form || !lista) return;
 
   const renderPlatos = () => {
     const platos = JSON.parse(localStorage.getItem('platosExtra')) || [];
@@ -25,26 +22,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   form.addEventListener('submit', (e) => {
     e.preventDefault();
-
-    const file = form.imagen.files[0];
-    if (!file) return;
-
-    const reader = new FileReader();
-    reader.onload = () => {
-      const nuevoPlato = {
-        nombre: form.nombre.value.trim(),
-        descripcion: form.descripcion.value.trim(),
-        precio: form.precio.value.trim(),
-        imagen: reader.result
-      };
-
-      const platosGuardados = JSON.parse(localStorage.getItem('platosExtra')) || [];
-      platosGuardados.push(nuevoPlato);
-      localStorage.setItem('platosExtra', JSON.stringify(platosGuardados));
-
-      form.reset();
-      renderPlatos();
+ const nuevoPlato = {
+      nombre: form.nombre.value.trim(),
+      descripcion: form.descripcion.value.trim(),
+      precio: form.precio.value.trim(),
+      imagen: form.imagen.value.trim()
     };
-    reader.readAsDataURL(file);
-  });
-});
+    const platosGuardados = JSON.parse(localStorage.getItem('platosExtra')) || [];
+    platosGuardados.push(nuevoPlato);
+    localStorage.setItem('platosExtra', JSON.stringify(platosGuardados));
+      form.reset();
+    renderPlatos();
+    });
+    
