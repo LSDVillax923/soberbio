@@ -374,6 +374,7 @@ footer .social a img:hover {
   background-color: white;
   margin-bottom: 1rem;
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 0.5rem 1rem;
   height: 80px;
@@ -386,19 +387,42 @@ footer .social a img:hover {
   gap: 1rem;
 }
 
-#toolbar .center {
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
-}
-
-#toolbar-logo { height: 100px; }
-#toolbar .icon { height: 32px; }
+#toolbar-logo { height: 150px; }
+.icon { height: 30px; }
 
 #toolbar button {
   padding: 6px 16px;
   font-size: 0.95rem;
+}
+
+#toolbar .left button {
+  background: none;
+  border: none;
+  color: black;
+  font-size: 0.8rem;
+  padding: 0;
+  letter-spacing: normal;
+  cursor: pointer;
+  transition: none;
+}
+
+#toolbar .left button:hover {
+  background: none;
+  color: black;
+  border: none;
+}
+
+
+.btn-volver {
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 0.9rem;
+  color: black;
+  text-decoration: none;
+}
+
+.btn-volver:hover {
+  color: black;
 }
 
