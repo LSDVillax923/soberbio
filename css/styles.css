@@ -8,14 +8,14 @@ body {
 
 /* --- INICIO TITULOS (h1-h6) --- */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Poppins', sans-serif; 
-  font-weight: 700; 
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
 }
 
-/* --- INICIO TEXTO GENERAL (p, li, a, button) --- */
+/* --- INICIO TEXTO GENERAL --- */
 p, li, a, button {
   font-family: 'Poppins', sans-serif;
-  font-weight: 400; 
+  font-weight: 400;
 }
 
 /* --- INICIO LOGO PRINCIPAL --- */
@@ -23,13 +23,13 @@ p, li, a, button {
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;            
-  top: 50%;                      
-  left: 50%;                     
-  transform: translate(-50%, -50%); 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
-/* --- INICIO CUERPO --- */
+/* --- INICIO CUERPO HOME --- */
 #cuerpo {
   padding: 160px;
 }
@@ -39,7 +39,7 @@ p, li, a, button {
   height: 1000px;
   background-image: url('../images/imagenesdefonfo/soberbioBistroistro.jpg');
   background-size: cover;
-  position: relative; 
+  position: relative;
 }
 
 /* --- INICIO BOTONES --- */
@@ -52,6 +52,7 @@ button {
   cursor: pointer;
   transition: background-color .3s, color .3s, border-color .3s, transform .3s;
 }
+
 button:hover {
   background-color: transparent;
   color: #f2f2f2;
@@ -79,7 +80,6 @@ button:hover {
   gap: 20px;
 }
 
-/* --- INICIO BOTON RESERVAR (NAV) --- */
 .btn-reservar-top {
   text-decoration: none;
   color: white;
@@ -88,12 +88,12 @@ button:hover {
   letter-spacing: 2px;
   transition: background-color .3s ease, color .3s ease;
 }
+
 .btn-reservar-top:hover {
   background-color: white;
   color: #0b1a2f;
 }
 
-/* --- INICIO BOTON MENU TOGGLE --- */
 .menu-toggle {
   display: flex;
   flex-direction: column;
@@ -106,6 +106,7 @@ button:hover {
   cursor: pointer;
   padding: 0;
 }
+
 .menu-toggle span {
   display: block;
   width: 100%;
@@ -113,7 +114,6 @@ button:hover {
   background-color: white;
 }
 
-/* --- INICIO MENU OVERLAY --- */
 .menu-overlay {
   position: fixed;
   top: 0;
@@ -126,6 +126,10 @@ button:hover {
   justify-content: center;
   align-items: center;
   z-index: 2000;
+}
+
+.menu-overlay.open {
+  display: flex;
 }
 
 /* --- INICIO CONTACTO --- */
@@ -141,17 +145,18 @@ button:hover {
 
 .contacto-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr; 
+  grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
 
 #contacto a {
-  color: #aaa;              
+  color: #aaa;
   text-decoration: none;
 }
+
 #contacto a:hover {
   text-decoration: underline;
-  color: #fff;              
+  color: #fff;
 }
 
 /* --- INICIO NOSOTROS --- */
@@ -165,6 +170,7 @@ button:hover {
   margin: 0 auto;
   padding: 2rem 0;
 }
+
 #nosotros img {
   flex: 1 1 500px;
   max-width: 500px;
@@ -172,10 +178,12 @@ button:hover {
   height: auto;
   border-radius: 4px;
 }
+
 #nosotros .nosotros-text {
   flex: 1 1 400px;
   max-width: 600px;
 }
+
 #nosotros .nosotros-text h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
@@ -192,7 +200,8 @@ button:hover {
   margin: 0 auto;
   padding: 100px 0;
 }
-#acerca img {   
+
+#acerca img {
   flex: 1 1 500px;
   order: 1;
   max-width: 500px;
@@ -200,11 +209,13 @@ button:hover {
   height: auto;
   border-radius: 4px;
 }
+
 #acerca .acerca-text {
   order: 2;
   flex: 1 1 400px;
   max-width: 600px;
 }
+
 #acerca .acerca-text h2 {
   margin: 0;
   order: 2;
@@ -217,14 +228,16 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; 
-  padding: 0px ;
+  flex-direction: column;
+  padding: 0;
 }
+
 #inspiracion img {
   margin-top: 2rem;
   border-radius: 4px;
   padding: 20px;
 }
+
 #inspiracion h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
@@ -241,18 +254,21 @@ button:hover {
   margin: 0 auto;
   padding: 2rem 0;
 }
+
 #chef img {
   flex: 1 1 500px;
   max-width: 500px;
   width: 100%;
   height: auto;
   border-radius: 4px;
-  margin-top: 100px; 
+  margin-top: 100px;
 }
+
 #chef .chef-text {
   flex: 1 1 400px;
   max-width: 600px;
 }
+
 #chef .chef-text h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
@@ -263,17 +279,19 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-direction: column; 
-  padding: 50px ;
-  text-align: center; 
+  flex-direction: column;
+  padding: 50px;
+  text-align: center;
   margin: 0 auto 1.5rem;
   line-height: 1.6;
 }
+
 #equipo img {
   margin-top: 2rem;
   border-radius: 4px;
   padding: 20px;
 }
+
 #equipo h2 {
   font-size: 3rem;
   margin-bottom: 1rem;
@@ -289,11 +307,13 @@ button:hover {
   padding: 2rem 0;
   flex-wrap: wrap;
 }
+
 #awards-text {
   flex: 1 1 400px;
   max-width: 600px;
   min-width: 300px;
 }
+
 #awards img {
   flex: 1 1 350px;
   max-width: 400px;
@@ -302,13 +322,15 @@ button:hover {
   border-radius: 4px;
   display: block;
 }
+
 #awards button {
   margin-top: 2rem;
   display: block;
 }
+
 #awards-text button {
   display: block;
-  margin: 2rem auto 0 auto; 
+  margin: 2rem auto 0 auto;
   width: 200px;
 }
 
@@ -318,25 +340,27 @@ button:hover {
   margin: 0 auto;
   padding: 2rem;
 }
+
 #ubicacion h2 {
   font-size: 2.5rem;
   margin-bottom: 1.5rem;
   text-align: center;
 }
+
 #ubicacion iframe {
   width: 100%;
   height: 400px;
   border: 0;
-  border-radius: 8px; 
+  border-radius: 8px;
 }
 
-/* --- INICIO FOOTER --- */
+/* --- INICIO FOOTER GENERAL --- */
 footer {
   padding: 2rem 4rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;              
+  flex-wrap: wrap;
 }
 
 footer ul {
@@ -363,13 +387,7 @@ footer .social a img:hover {
   filter: brightness(1.2);
 }
 
-.menu-overlay.open {
-  display: flex;
-}
-
-
-/* --- INICIO PAGINA  RESERVAR --- */
-
+/* --- INICIO PAGINA RESERVAR --- */
 #toolbar {
   background-color: white;
   margin-bottom: 1rem;
@@ -387,8 +405,13 @@ footer .social a img:hover {
   gap: 1rem;
 }
 
-#toolbar-logo { height: 150px; }
-.icon { height: 30px; }
+#toolbar-logo {
+  height: 150px;
+}
+
+.icon {
+  height: 30px;
+}
 
 #toolbar button {
   padding: 6px 16px;
@@ -412,7 +435,6 @@ footer .social a img:hover {
   border: none;
 }
 
-
 .btn-volver {
   display: flex;
   align-items: center;
@@ -434,31 +456,209 @@ footer .social a img:hover {
   position: relative;
 }
 
-#cuerpo-reservar::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.5); 
-}
-
 .reservar-container {
   position: relative;
   z-index: 1;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 2rem;
+  flex-wrap: wrap;
+  padding: 1rem;
   height: 100%;
 }
 
 .card {
-  background: rgba(30, 30, 30, 0.85);
+  background: rgba(50, 50, 50, 0.7);
   color: white;
-  padding: 2rem;
+  padding: 1.5rem;
   border-radius: 12px;
-  width: 280px;
+  width: 320px;
+  height: auto;
+  min-height: 520px;
+  box-sizing: border-box;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  overflow: hidden;
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+.titulo-card {
+  margin: 0;
+  padding-top: .25rem;
+  font-size: 1.4rem;
+  line-height: 1.2;
+  word-break: break-word;
+}
+
+.subtitulo-card {
+  font-size: 1rem;
+  margin: 0 0 1rem;
+}
+
+.personas {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.personas button {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 2px solid white;
+  background: transparent;
+  color: white;
+  font-weight: bold;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.personas button:hover {
+  background: white;
+  color: black;
+}
+
+.personas button.activo {
+  background: white;
+  color: black;
+}
+
+.nota {
+  font-size: 0.85rem;
+  line-height: 1.4;
+  margin-top: auto;
+  padding: 0 .5rem .25rem;
+  word-break: break-word;
+}
+
+.calendario {
+  margin-top: 0.5rem;
+  color: white;
+}
+
+.cal-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: .75rem;
+}
+
+.cal-label {
+  font-weight: 600;
+}
+
+.cal-nav {
+  background: transparent;
+  color: white;
+  border: 1px solid rgba(255,255,255,.6);
+  padding: .4rem .6rem;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.cal-nav:hover {
+  background: white;
+  color: black;
+}
+
+.cal-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.cal-table th,
+.cal-table td {
+  border: 1px solid rgba(255,255,255,0.3);
+  text-align: center;
+  vertical-align: middle;
+}
+
+.cal-table th {
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: .4rem 0;
+}
+
+.cal-table td {
+  font-size: 0.9rem;
+  padding: .6rem 0;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+
+.cal-table td:hover {
+  background: white;
+  color: black;
+  font-weight: bold;
+}
+
+.cal-table td.activo {
+  background: white;
+  color: black;
+  font-weight: bold;
+}
+
+/* --- INICIO FOOTER RESERVAR --- */
+hr {
+  border: 0;
+  border-top: 1px solid rgba(255,255,255,.35);
+  margin: 0;
+}
+
+.footer-info {
+  background: transparent;
+  border-top: 1px solid rgba(255,255,255,.35);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 14px 22px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 48px;
+  color: rgba(255,255,255,.92);
+  font-size: 14px;
+  line-height: 1.4;
+  position: relative;
+  z-index: 2;
+}
+
+.footer-left,
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+.footer-info .info-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  white-space: nowrap;
+  opacity: .95;
+  color: #fff;
+}
+
+.footer-left .info-item + .info-item::before,
+.footer-right .info-item + .info-item::before {
+  content: none;
+}
+
+.footer-info svg,
+.footer-info img {
+  width: 18px;
+  height: 18px;
+  opacity: .95;
+  filter: invert(1);
 }

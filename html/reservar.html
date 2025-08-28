@@ -2,68 +2,125 @@
 <html lang="es">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Reservar - Soberbio</title>
-    <link rel="stylesheet" href="../css/styles.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reservar - Soberbio</title>
+  <link rel="stylesheet" href="../css/styles.css" />
 </head>
 
 <body>
 
-    <div id="toolbar">
-        <div class="left">
-            <a href="../html/inicio.html" id="logo-superior">
-                <img id="toolbar-logo" src="../images/logos/logoPrincipalOscuro.png" alt="Soberbio">
-            </a>
-            <a href="../html/inicio.html" class="btn-volver">
-  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="none" stroke="black" stroke-width="2" viewBox="0 0 24 24">
-    <path d="M15 18l-6-6 6-6"/>
-  </svg>
-  Volver
-</a>
-
-
-        </div>
-
-        <div class="right">
-            <a href="https://www.instagram.com/soberbio.bistro/" target="_blank" title="Instagram">
-                <img class="icon" src="../images/logos/instagramOscuro.svg" alt="Instagram">
-            </a>
-            <a href="https://wa.me/573155095645" target="_blank" title="WhatsApp ">
-                <img class="icon" src="../images/logos/whatsappOscuro.svg" alt="WhatsApp">
-            </a>
-            <a href="https://www.facebook.com/soberbio.bistro" target="_blank" title="Facebook">
-                <img class="icon" src="../images/logos/facebookOscuro.svg" alt="Facebook">
-            </a>
-            <a href="../html/login.html" id="login-button">
-                <button>Iniciar Sesión</button>
-            </a>
-        </div>
+  <!-- ====== TOOLBAR ====== -->
+  <div id="toolbar">
+    <div class="left">
+      <a href="../html/inicio.html" id="logo-superior">
+        <img id="toolbar-logo" src="../images/logos/logoPrincipalOscuro.png" alt="Soberbio">
+      </a>
+      <a href="../html/inicio.html" class="btn-volver">
+       
+        <span>‹</span> Volver
+      </a>
     </div>
 
-
-
-    <div id="cuerpo-reservar">
-        <div class="reservar-container">
-    <div class="card">
-      <h2><em>Elige</em></h2>
-      <p>Número de personas</p>
-    </div>
-    <div class="card">
-      <h2><em>Fecha</em></h2>
-      <p>Selecciona la fecha</p>
-    </div>
-    <div class="card">
-      <h2><em>Hora</em></h2>
-      <p>Selecciona una hora disponible</p>
+    <div class="right">
+      <a href="https://www.instagram.com/soberbio.bistro/" target="_blank" title="Instagram">
+        <img class="icon" src="../images/logos/instagramOscuro.svg" alt="Instagram">
+      </a>
+      <a href="https://wa.me/573155095645" target="_blank" title="WhatsApp">
+        <img class="icon" src="../images/logos/whatsappOscuro.svg" alt="WhatsApp">
+      </a>
+      <a href="https://www.facebook.com/soberbio.bistro" target="_blank" title="Facebook">
+        <img class="icon" src="../images/logos/facebookOscuro.svg" alt="Facebook">
+      </a>
+      <a href="../html/login.html" id="login-button">
+        <button>Iniciar Sesión</button>
+      </a>
     </div>
   </div>
 
+  <!-- ====== CUERPO RESERVAR ====== -->
+  <div id="cuerpo-reservar">
+    <div class="reservar-container">
+      <div class="card">
+        <h2 class="titulo-card"><em>Elige</em></h2>
+        <p class="subtitulo-card">Número de personas</p>
+        <div class="personas">
+          <button class="persona-btn">1</button>
+          <button class="persona-btn">2</button>
+          <button class="persona-btn">3</button>
+          <button class="persona-btn">4</button>
+          <button class="persona-btn">5</button>
+          <button class="persona-btn">6</button>
+          <button class="persona-btn">7</button>
+          <button class="persona-btn">8</button>
+          <button class="persona-btn">+</button>
+        </div>
+        <p class="nota">
+          Para garantizar tu reserva se realiza un anticipo por persona 100% consumibles. En caso de no
+          asistir o no cancelar con mínimo 24 horas de anticipación, este no será devuelto.
+        </p>
+      </div>
+
+      <div class="card">
+        <h2 class="titulo-card"><em>Fecha</em></h2>
+        <p class="subtitulo-card">Selecciona la fecha para tu reserva</p>
+
+        <div class="calendario">
+          <div class="cal-head">
+            <button id="prevMonth" class="cal-nav">‹</button>
+            <div id="monthLabel" class="cal-label"></div>
+            <button id="nextMonth" class="cal-nav">›</button>
+          </div>
+          <table class="cal-table">
+            <thead>
+              <tr>
+                <th>DOM</th>
+                <th>LUN</th>
+                <th>MAR</th>
+                <th>MIÉ</th>
+                <th>JUE</th>
+                <th>VIE</th>
+                <th>SÁB</th>
+              </tr>
+            </thead>
+            <tbody id="calBody"></tbody>
+          </table>
+        </div>
+      </div>
+
+      <div class="card">
+        <h2 class="titulo-card"><em>Hora</em></h2>
+        <p class="subtitulo-card">Selecciona una hora disponible</p>
+      </div>
     </div>
+  </div>
 
+  <!-- ====== FOOTER ====== -->
+  <hr>
+  <footer>
+    <a href="inicio.html">
+      <img src="../images/logos/logoPrincipal.png" height="150" alt="Logo SOBERBIO" title="Inicio" />
+    </a>
 
+    <ul>
+      <li><a href="#nosotros">Nosotros</a></li>
+      <li><a href="#acerca">Acerca de</a></li>
+      <li><a href="#chef">El Chef</a></li>
+      <li><a href="#awards">Awards</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+      <li><a href="#prensa">Prensa</a></li>
+      <li><a href="gallery.html">Galería</a></li>
+    </ul>
 
+    <div class="social">
+      <a href="https://www.instagram.com/soberbio.bistro/" target="_blank"><img src="../images/logos/instagram.png" height="40" alt="Instagram"></a>
+      <a href="https://wa.me/573155095645" target="_blank"><img src="../images/logos/whatsapp.png" height="40" alt="WhatsApp"></a>
+      <a href="https://www.facebook.com/soberbio.bistro" target="_blank"><img src="../images/logos/facebook.png" height="40" alt="Facebook"></a>
+      <a href="https://apps.apple.com/es/app/facetime/id1110145091" target="_blank"><img src="../images/logos/phone.png" height="40" alt="Teléfono"></a>
+      <a href="https://www.google.com/maps/place/SOBERBIO/" target="_blank"><img src="../images/logos/location.png" height="40" alt="Maps"></a>
+    </div>
+  </footer>
 
+  <script src="../js/script.js"></script>
 </body>
-
 </html>
