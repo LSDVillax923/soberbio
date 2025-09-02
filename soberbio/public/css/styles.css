@@ -37,7 +37,7 @@ p, li, a, button {
 /* --- INICIO PRESENTACION --- */
 #presentacion {
   height: 1000px;
-  background-image: url('../images/imagenesdefonfo/soberbioBistroistro.jpg');
+  background-image: url('../public/images/imagenesdefonfo/soberbioBistroistro.jpg');
   background-size: cover;
   position: relative;
 }
@@ -453,7 +453,7 @@ footer .social a img:hover {
 
 #cuerpo-reservar {
   height: 800px;
-  background-image: url('../images/imagenesdefonfo/soberbioBistroistro.jpg');
+  background-image: url('../public/images/imagenesdefonfo/soberbioBistroistro.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -684,7 +684,7 @@ hr {
 
 #cuerpo-menu{
   min-height:100vh;
-  background-image:url('../images/imagenesdefonfo/soberbioBistroistro.jpg');
+  background-image:url('../public/images/imagenesdefonfo/soberbioBistroistro.jpg');
   background-color: white;
   background-size:cover;
   background-position:center;
@@ -760,7 +760,7 @@ hr {
 /* --- SIGN IN & LOGIN PAGES --- */
 .signin-page, .login-page {
   min-height: 100vh;
-  background-image: url('../images/imagenesdefonfo/soberbioBistroistro.jpg');
+  background-image: url('../public/images/imagenesdefonfo/soberbioBistroistro.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
