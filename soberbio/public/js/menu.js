@@ -3,43 +3,43 @@ const platosBase = [
     nombre: 'Hamburguesa Gourmet',
     descripcion: 'Jugosa carne de res, queso maduro, cebolla caramelizada y pan artesanal.',
     precio: '38.000',
-    imagen: '../images/platos/hamburguesa.png'
+    imagen: '../public/images/platos/hamburguesa.png'
   },
   {
     nombre: 'Salchipapa Especial',
     descripcion: 'Papas fritas artesanales con salchicha  y salsas de la casa.',
     precio: '28.000',
-    imagen: '../images/platos/salchipapa.png'
+    imagen: '../public/images/platos/salchipapa.png'
   },
   {
     nombre: 'Carne Asada',
     descripcion: 'Corte de res a la parrilla acompañado de vegetales salteados.',
     precio: '45.000',
-    imagen: '../images/platos/carneAsada.png'
+    imagen: '../public/images/platos/carneAsada.png'
   },
   {
     nombre: 'Pollo Asado',
     descripcion: 'Pechuga de pollo marinada y asada lentamente con hierbas frescas.',
     precio: '32.000',
-    imagen: '../images/platos/pechugaAsada.png'
+    imagen: '../public/images/platos/pechugaAsada.png'
   },
   {
     nombre: 'Ceviche',
     descripcion: 'Pescado fresco marinado en jugo de limón con cebolla y cilantro.',
     precio: '45.000',
-    imagen: '../images/platos/ceviche.png'
+    imagen: '../public/images/platos/ceviche.png'
   },
   {
     nombre: 'Pasta Alfredo',
     descripcion: 'Pasta fresca con salsa Alfredo cremosa y queso parmesano.',
     precio: '38.000',
-    imagen: '../images/platos/pasta.png'
+    imagen: '../public/images/platos/pasta.png'
   },
   {
     nombre: 'Pizza Gourmet',
     descripcion: 'Masa artesanal, salsa de tomate fresco y ingredientes seleccionados.',
     precio: '40.000',
-    imagen: '../images/platos/pizza.png'
+    imagen: '../public/images/platos/pizza.png'
   }
 ];
 

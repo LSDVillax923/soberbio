@@ -37,7 +37,7 @@ p, li, a, button {
 /* --- INICIO PRESENTACION --- */
 #presentacion {
   height: 1000px;
-  background-image: url('../public/images/imagenesdefonfo/soberbioBistroistro.jpg');
+  background-image: url('../images/imagenesdefonfo/soberbioBistroistro.jpg');
   background-size: cover;
   position: relative;
 }
@@ -453,7 +453,7 @@ footer .social a img:hover {
 
 #cuerpo-reservar {
   height: 800px;
-  background-image: url('../public/images/imagenesdefonfo/soberbioBistroistro.jpg');
+  background-image: url('../images/imagenesdefonfo/soberbioBistroistro.jpg');
   background-size: cover;
   background-position: center;
   position: relative;
@@ -684,7 +684,7 @@ hr {
 
 #cuerpo-menu{
   min-height:100vh;
-  background-image:url('../public/images/imagenesdefonfo/soberbioBistroistro.jpg');
+  background-image:url('../images/imagenesdefonfo/soberbioBistroistro.jpg');
   background-color: white;
   background-size:cover;
   background-position:center;
@@ -760,7 +760,7 @@ hr {
 /* --- SIGN IN & LOGIN PAGES --- */
 .signin-page, .login-page {
   min-height: 100vh;
-  background-image: url('../public/images/imagenesdefonfo/soberbioBistroistro.jpg');
+  background-image: url('../images/imagenesdefonfo/soberbioBistroistro.jpg');
   background-size: cover;
   background-position: center;
   display: flex;
@@ -798,6 +798,41 @@ hr {
 }
 
 .signin-form .form-text {
+  margin-top: 12px;
+  text-align: center;
+}
+
+
+
+.login-form {
+  background: rgba(255, 255, 255, 0.9);
+  color: #111;
+  padding: 24px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 400px;
+}
+
+.login-form label {
+  display: block;
+  margin-top: 12px;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 4px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.login-form button {
+  width: 100%;
+  padding: 10px;
+  margin-top: 16px;
+}
+
+.login-form .form-text {
   margin-top: 12px;
   text-align: center;
 }
